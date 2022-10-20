@@ -1,0 +1,213 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "IUnipilot",
+  "sourceName": "contracts/interfaces/IUnipilot.sol",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "components": [
+            {
+              "internalType": "address",
+              "name": "sender",
+              "type": "address"
+            },
+            {
+              "internalType": "address",
+              "name": "exchangeAddress",
+              "type": "address"
+            },
+            {
+              "internalType": "address",
+              "name": "token0",
+              "type": "address"
+            },
+            {
+              "internalType": "address",
+              "name": "token1",
+              "type": "address"
+            },
+            {
+              "internalType": "uint256",
+              "name": "amount0Desired",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "amount1Desired",
+              "type": "uint256"
+            }
+          ],
+          "internalType": "struct IHandler.DepositParams",
+          "name": "params",
+          "type": "tuple"
+        },
+        {
+          "internalType": "bytes[2]",
+          "name": "data",
+          "type": "bytes[2]"
+        }
+      ],
+      "name": "createPoolAndDeposit",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "amount0Base",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "amount1Base",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "amount0Range",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "amount1Range",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "mintedTokenId",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "components": [
+            {
+              "internalType": "address",
+              "name": "sender",
+              "type": "address"
+            },
+            {
+              "internalType": "address",
+              "name": "exchangeAddress",
+              "type": "address"
+            },
+            {
+              "internalType": "address",
+              "name": "token0",
+              "type": "address"
+            },
+            {
+              "internalType": "address",
+              "name": "token1",
+              "type": "address"
+            },
+            {
+              "internalType": "uint256",
+              "name": "amount0Desired",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "amount1Desired",
+              "type": "uint256"
+            }
+          ],
+          "internalType": "struct IHandler.DepositParams",
+          "name": "params",
+          "type": "tuple"
+        },
+        {
+          "internalType": "bytes",
+          "name": "data",
+          "type": "bytes"
+        }
+      ],
+      "name": "deposit",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "amount0Base",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "amount1Base",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "amount0Range",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "amount1Range",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "mintedTokenId",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "governance",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "recipient",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "mintPilot",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "sender",
+          "type": "address"
+        }
+      ],
+      "name": "mintUnipilotNFT",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "mintedTokenId",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}
